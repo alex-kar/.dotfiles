@@ -119,7 +119,7 @@ fi
 # enable fzf key bindings
 source /usr/share/doc/fzf/examples/key-bindings.bash
 
-[[ -s "$HOME/.bashrc_private" ]] && source "$HOME/.bashrc_personal"
+[[ -s "$HOME/personal/.bashrc_personal" ]] && source "$HOME/personal/.bashrc_personal"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
