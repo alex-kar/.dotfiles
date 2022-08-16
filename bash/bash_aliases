@@ -1,3 +1,0 @@
-if [ -f "$HOME/personal/.bash_aliases" ]; then
-   source "$HOME/personal/.bash_aliases"
-fi

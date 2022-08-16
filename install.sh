@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # stow
-stow bash
+stow --target=$HOME bash
