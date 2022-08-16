@@ -1,3 +1,4 @@
-if [ -f "../personal/bash/.bash_aliases" ]; then
-   source "../personal/bash/.bash_aliases"
+echo "bash_aliases location $(pwd)"
+if [ -f "$HOME/.dotfiles/personal/bash/.bash_aliases" ]; then
+   source "$HOME/.dotfiles/personal/bash/.bash_aliases"
 fi
