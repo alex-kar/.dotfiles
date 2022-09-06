@@ -116,6 +116,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Add Go to path
+if [ -d "/usr/local/go/bin" ] ; then
+  export GOROOT=/usr/local/go
+  export GOPATH=$HOME/go
+  PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
+fi
+
+
 # enable fzf key bindings
 source /usr/share/doc/fzf/examples/key-bindings.bash
 
