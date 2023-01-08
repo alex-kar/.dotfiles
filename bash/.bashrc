@@ -130,6 +130,15 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 [[ -s "$HOME/.dotfiles/personal/bash/.bashrc_personal" ]] && source "$HOME/.dotfiles/personal/bash/.bashrc_personal"
 
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/tmp/google-cloud-sdk/path.bash.inc' ]; then . '/tmp/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/tmp/google-cloud-sdk/completion.bash.inc' ]; then . '/tmp/google-cloud-sdk/completion.bash.inc'; fi
+
+# The next line enables new binary plugin for authentication
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
