@@ -126,6 +126,8 @@ fi
 
 # enable fzf key bindings
 source /usr/share/doc/fzf/examples/key-bindings.bash
+# set fzf search directories
+export FZF_ALT_C_COMMAND='fd . $HOME --type d'
 
 [[ -s "$HOME/.dotfiles/personal/bash/.bashrc_personal" ]] && source "$HOME/.dotfiles/personal/bash/.bashrc_personal"
 
